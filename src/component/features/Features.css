@@ -1,0 +1,20 @@
+.innerWrapper {
+  padding-top: 320px;
+}
+
+.flex-container {
+  display: flex;
+  padding-bottom: 32px;
+}
+
+.mobileWrapper {
+  display: flex;
+  max-width: 1160px;
+}
+
+@media (max-width: 1020px) {
+  .mobileWrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

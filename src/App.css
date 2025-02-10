@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+
+.outerWrapper {
+  display: flex;
+  width: 90%; /* Or any width less than 100% */
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.innerSection {
+  width: 80%;
+  margin: auto;
+  max-width: 1240px;
+}
+/* Media query for screens smaller than 1200px */
+.innerWrapper {
+  width: 1160px;
+  height: auto;
+}
+
+.padding-container {
+  padding: 100px 0;
+}
+.btn {
+  padding: 17px 33px;
+  border-radius: 15px;
+  border: 2px solid #000;
+}

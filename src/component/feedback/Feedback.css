@@ -1,0 +1,26 @@
+.Feedbackbox-container {
+  display: flex;
+  border: 2px solid #e7dcff;
+  border-radius: 15px;
+  padding: 14px;
+  position: relative;
+  display: flex;
+  width: 568px;
+  height: 306px;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1160px;
+}
+
+.star-container {
+  display: flex;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .Feedbackbox-container {
+    width: 100%;
+  
+  }
+}
