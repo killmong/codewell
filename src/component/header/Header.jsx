@@ -31,7 +31,7 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-4">
             <NavBar />
           </div>
-          <div className="hidden md:flex items-center ">
+          <div className="hidden md:flex items-center xl:mr-20 ">
             <Button text="Contact us" link="#" className="btn  font-[700]" />
           </div>
           <div className="md:hidden">

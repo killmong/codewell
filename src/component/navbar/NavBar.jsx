@@ -5,8 +5,8 @@ const NavBar = () => {
     <div>
       <nav>
         <ul
-          className="flex md:flex-row flex-col text-xs xl:text-
-                           md:items-center xl:gap-[4vw] gap-4"
+          className="flex md:flex-row flex-col text-base lg:text-xl
+                           md:items-center lg:gap-[4vw] gap-4"
         >
           <li>
             <a href="">Home</a>

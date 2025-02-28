@@ -12,11 +12,11 @@ const HeroSection = () => {
           The flex container stacks items vertically on small screens (flex-col)
           and places them side-by-side (flex-row) on medium screens and up.
         */}
-        <div className="heroSection flex flex-col xl:flex-row mx-auto items-center xl:items-start">
+        <div className="heroSection flex flex-col lg:flex-row mx-auto items-center xl:items-start">
           {/* Text Section */}
           <div className="heroText flex flex-col gap-3 p-4 md:p-0">
             <h1
-              className="text-3xl md:text-5xl xl:text-7xl text-black font-semibold md:leading-[44px] xl:leading-[88px] tracking-[-2.88px] 
+              className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl text-black font-semibold md:leading-[44px] xl:leading-[88px] tracking-[-2.88px] 
                            md:w-[608px]"
             >
               We help people to realize their dream property
@@ -24,7 +24,7 @@ const HeroSection = () => {
 
             <p
               className="font-light leading-[30px] text-xl text-[#686A79] text-left 
-                          md:w-[608px]"
+                          lg:w-[608px]"
             >
               We are creative people who provide the best way <br />
               to you who want to have a new confortable and <br /> suitable
@@ -38,7 +38,7 @@ const HeroSection = () => {
             */}
             <div
               className="btn flex flex-col md:flex-row justify-between border-2 p-5 
-                            relative md:absolute md:top-[550px] xl:top-[450px] xl:w-auto w-full"
+                            relative lg:absolute lg:top-[450px] xl:top-[450px] lg:w-auto w-full"
             >
               <IconProvider
                 name="Location"

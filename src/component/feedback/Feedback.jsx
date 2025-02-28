@@ -1,6 +1,14 @@
 import React from "react";
 import Feedbackbox from "./Feedbackbox";
 import "./Feedback.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// Import required modules
+import { Pagination } from "swiper/modules";
 
 const Feedback = () => {
   return (
@@ -8,24 +16,57 @@ const Feedback = () => {
       <h2 className="text-center text-5xl font-semibold tracking-[0.92px] leading-[56px]">
         Kind Words From Our Customers
       </h2>
-      <div className="flex mobileWrapper flex-row gap-10">
-        <Feedbackbox
-          designation={"CEO of Asana"}
-          customerName={"Brooklyn Simmons"}
-          comment={`"Your company is truly upstanding and is behind its
-product 100%. It's the perfect solution for our business.
-It has really helped our business."`}
-          maxStars={5}
-        />
-        <Feedbackbox
-          designation={"CEO of Asana"}
-          customerName={"Brooklyn Simmons"}
-          comment={`"Your company is truly upstanding and is behind its
-product 100%. It's the perfect solution for our business.
-It has really helped our business."`}
-          maxStars={5}
-        />
-      </div>
+      <Swiper className=" w-full m-auto h-auto "
+        modules={[Pagination]} // Enable pagination module
+        spaceBetween={10} // Space between slides
+        slidesPerView={1} // Number of slides to show
+        pagination={{ clickable: true }} // Enable pagination dots
+        breakpoints={{
+          // Responsive breakpoints for larger screens
+          768: {
+            slidesPerView: 1, // 2 slides on tablet and above
+            spaceBetween: 5,
+          },
+          1024: {
+            slidesPerView: 2, // 3 slides on desktop
+            spaceBetween: 30,
+          },
+        }}
+      >
+        {/* Wrap each Feedbackbox in a SwiperSlide */}
+        <SwiperSlide>
+          <Feedbackbox
+            designation={"CEO of Asana"}
+            customerName={"Brooklyn Simmons"}
+            comment={`"Your company is truly upstanding and is behind its product 100%. It's the perfect solution for our business. It has really helped our business."`}
+            maxStars={5}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Feedbackbox
+            designation={"CEO of Asana"}
+            customerName={"Brooklyn Simmons"}
+            comment={`"Your company is truly upstanding and is behind its product 100%. It's the perfect solution for our business. It has really helped our business."`}
+            maxStars={5}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Feedbackbox
+            designation={"CEO of Asana"}
+            customerName={"Brooklyn Simmons"}
+            comment={`"Your company is truly upstanding and is behind its product 100%. It's the perfect solution for our business. It has really helped our business."`}
+            maxStars={5}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Feedbackbox
+            designation={"CEO of Asana"}
+            customerName={"Brooklyn Simmons"}
+            comment={`"Your company is truly upstanding and is behind its product 100%. It's the perfect solution for our business. It has really helped our business."`}
+            maxStars={5}
+          />
+        </SwiperSlide>
+        </Swiper>
     </div>
   );
 };

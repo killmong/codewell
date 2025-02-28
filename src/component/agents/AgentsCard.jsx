@@ -30,8 +30,8 @@ const AgentsCard = ({ heading, text, imgLink }) => {
           </div>
         </div>
       </div>
-      <div className="rounded-2xl imgSection mt-2  w-full h-full md:w-[108px]  md:h-[108px] ">
-        <img src={imgLink} className="object-cover  lg:absolute right-3 top-6 " alt="agent profile" />
+      <div className="rounded-2xl imgSection mt-2  w-full h-full lg:w-[108px]  lg:h-[108px] ">
+        <img src={imgLink} className="object-cover  top-4 right-2 absolute md:top-4 md:right-4 lg:right-3 lg:top-6 " alt="agent profile" />
       </div>
     </div>
   );

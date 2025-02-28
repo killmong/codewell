@@ -1,5 +1,9 @@
 import React from "react";
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
 const Cards2 = (props) => {
   const { heading, text, img } = props;
   return (

@@ -16,23 +16,20 @@
   flex-direction: row;
 }
 
-
-
 .listingCard {
   border: 2px solid #e7dcff;
   border-radius: 20px;
   width: 365.33px;
-
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1024px) {
   .card {
     width: 100%;
   }
   .listingCard {
     width: 100%;
+    height: auto=;
   }
-  
 
   .card-container .cardsBox {
     width: 100%;
@@ -50,7 +47,6 @@
   padding: 42px;
   justify-content: space-between;
 }
-
 
 .icon-container {
   width: 90px;
@@ -83,8 +79,11 @@
   height: 481px;
 }
 
-@media screen and (max-width: 500px) {
-  .cities-cardInner,.listingCard {
+@media screen and (max-width: 1024px) {
+  .cities-cardInner,
+  .listingCard,
+  .cardInner,
+  .cardsBox {
     width: 100%;
     height: auto;
   }
@@ -99,10 +98,5 @@
   .card-container {
     display: flex;
     justify-content: space-between;
-  }
-
-  .cardsBox {
-    flex: 1;
-    margin: 10px;
   }
 }

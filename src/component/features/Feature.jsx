@@ -1,11 +1,11 @@
 import React from "react";
-import "./Features.css";
+import { Swiper, SwiperSlide } from "swiper/react";
 import Cards2 from "./Cards/Cards2";
 import FeatureHeadings from "./FeatureHeadings";
 import ListingCards from "./Cards/ListingCards";
 import CardCategories from "./Cards/CardCategories";
 import CitiesCard from "./Cards/CitiesCard";
-import { CiLocationOn } from "react-icons/ci";
+import "./Features.css";
 const Feature = () => {
   return (
     <div className="innerSection md:pt-24  ">
@@ -112,7 +112,7 @@ const Feature = () => {
         </div>
       </section>
 
-      <div className="mobileWrapper ">
+      <div className="flex flex-col max-w-[1160px]  lg:flex lg:flex-row justify-between gap-5 mt-10">
         <ListingCards
           img={"/src/assets/features/card-img1.png"}
           price={"$15,000"}
@@ -122,7 +122,6 @@ const Feature = () => {
           baths={"3 Baths"}
           area={"5x7m"}
         />
-
         <ListingCards
           img={"/src/assets/features/card-img2.png"}
           price={"$4,299"}
@@ -132,7 +131,6 @@ const Feature = () => {
           baths={"2 Baths"}
           area={"7x7m"}
         />
-
         <ListingCards
           img={"/src/assets/features/card-img3.png"}
           price={"$5,099"}
@@ -152,14 +150,14 @@ const Feature = () => {
             </h2>
           </div>
           <div className="lg:w-[485px]">
-            <p className="font-light   text-xs md:text-lg  text-[#686A79] leading-7 text-left  decoration-skip-ink-none">
+            <p className="font-light   text-base md:text-lg  text-[#686A79] leading-7 text-left  decoration-skip-ink-none">
               We guarantee that the products we sell will make our customers
               happy because we are very concerned about our consumer
               satisfaction
             </p>
           </div>
         </div>
-        <div className=" mobileWrapper m md:flex">
+        <div className=" flex flex-col gap-5 mt-10 lg:flex-row lg:gap-5 justify-between">
           <Cards2
             heading={"Affordable price"}
             text={

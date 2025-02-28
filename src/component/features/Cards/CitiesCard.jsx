@@ -4,8 +4,8 @@ const CitiesCard = ({ heading, text, img }) => {
   return (
     <div className="card-container">
       <div className="cardsBox">
-        <div className="cities-cardInner ">
-          <div className="w-full  md:w-[363px] md:h-[363px]">
+        <div className="cities-cardInner w-full h-auto">
+          <div className="w-full h-auto lg:w-[363px] lg:h-[363px]">
             <img className="" src={img} alt="cities card" />
           </div>
           <div className="px-5 py-6">

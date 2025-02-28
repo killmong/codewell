@@ -17,12 +17,12 @@ const ListingCards = (props) => {
           </label>
         </div>
         <div className="listingCard ">
-          <div>
-          <img src={img} alt="Property images" className="object-cover md:w-[363px] md:h-[181px]" />
+          <div className="lg:w-[363px] w-full h-auto lg:h-[181px]">
+          <img src={img} alt="Property images" className="object-cover w-full h-auto  " />
           
           </div>
-          <div className="cardInner mt-8">
-            <h4 className="text-[32px] pt-12">
+          <div className="cardInner  mt-8">
+            <h4 className="text-[32px]   pt-12">
               {price} <sub className="text-[#686A79] text-lg">/month</sub>
             </h4>
 
